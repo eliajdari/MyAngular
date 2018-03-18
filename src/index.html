@@ -7,8 +7,41 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
+  <div class="logins-header">
+  <a href="#" class="header-link">خروج از سیستم</a>
+  <a href="#" class="header-link">تغییر کلمه عبور</a>
+  </div>
   <app-root></app-root>
+  <div class="footer">
+    
+     تمامی حقوق برای شرکت فناوران اطلاعات خبره محفوظ است
+    
+    </div>
 </body>
 </html>
+<!--
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+-->
+<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/persian-datepicker.min.css">
+<script src="/assets/javascripts/jquery.min.js"></script>
+
+  
+  <script src="/assets/javascripts/bootstrap.min.js"></script>
+  <script src="/assets/javascripts/persian-date.min.js"></script>
+  <script src="/assets/javascripts/persian-datepicker.min.js"></script>
+  <script type="text/javascript">
+   
+    $(".datetime").pDatepicker({
+      observer: true,
+    format: 'YYYY/MM/DD',
+    altField: '.observer-example-alt'
+    });
+  </script>

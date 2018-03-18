@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'IranSans';
+   
+    src: url(../src/app/fonts/IranSans.eot);
+  
+    src: url(../src/app/fonts/IranSans.eot?#iefix) format('embedded-opentype');
+    src:   url(../src/app/fonts/IranSans.woff) format('woff');
+    src:  url(../src/app/fonts/IranSans.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+div,li,a,h1,h4,h2,h3,h5,h6{
+    font-family:'IranSans'!important;
+}
+body{
+    background-image: url('/assets/images/back.png');
+    direction: rtl !important;
+    background-repeat: repeat;
+}
+.footer{
+    border-top: 1px solid white;
+    color: rgb(96,157,206);
+    text-align: center;
+    padding:20px;
+    font-weight:bold;
+    font-size:15px;
+}
+.logins-header{
+    background-color: rgb(234,234,234)!important;
+    padding: 10px;
+    height: 40px;
+    border-bottom: 1px solid rgb(191,200,210);
+}
+.logins-header a{
+    float: left;
+    padding-left:10px;
+    color: rgb(149, 172, 196);
+    font-size: 12px;
+}
+select{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}

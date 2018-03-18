@@ -1,0 +1,29 @@
+<h1>hello {{name}}</h1>
+<h2>
+  posts:
+</h2>
+<div *ngFor="let post of posts; let i=index">
+  <h4>
+  post {{i+1}}: {{post.title}}
+  </h4>
+
+</div>
+<button (click)="onClick()">Click me</button>
+<h2>hobbies:</h2>
+<form (submit)="addHobby(hobby.value)">
+  <label for="hobby">Hobby:</label>
+  <input type="text" #hobby>
+</form>
+<h2>
+  edit user:
+</h2>
+<form>
+  <label for="name">Name:</label>
+  <input type=text [(ngModel)]="name" name="name">
+
+</form>
+<ul>
+<li *ngFor="let hobby of hobbies; let i=index">
+  {{i+1}} :{{hobby}}
+</li>
+</ul>
